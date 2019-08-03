@@ -69,4 +69,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Stack
 
+Using MongoDB Atlas. Used a connection string
+
 I chose MongoDB to store information and then retrieve it quickly later.
+
+# Dependencies
+
+```bash
+npm install express cors mongoose dotenv
+npm install -g nodemon
+```
+
+1. Create cluster and set up server.js
+
+2. Run server
+
+```bash
+nodemon server'
+```
+
+3. Create env, copy connection string, create environmental variable in .env to establish MongoDB database connection
