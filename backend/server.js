@@ -21,6 +21,13 @@ connection.once('open', () => (
     console.log("MongoDB database connection established successfully!")
 ));
 
+// Require and use files
+const staffRouter = require('./routes/staff');
+const timelineRouter = rquire('./routes/timeline')
+
+app.use('staff', staffRouter);
+app.use('timeline', timelineRouter);
+
 // Starts the server 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
