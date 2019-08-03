@@ -92,3 +92,16 @@ nodemon server'
 4. Create database schema using Mongoose
 5. Add API endpoint routes, so app can perform CRUD operations
 6. Use Insomnia REST client to test API. Create new POST request with JSON
+   Example:
+
+```
+{
+    POST http://localhost:5000/staff/add
+	"name": "Samantha",
+	"social": {
+		"linkedin": "https://www.linkedin.com/in/shangsan",
+		"twitter": "https://twitter.com/SamanthaHangsan",
+		"github": "https://github.com/samantha"
+	}
+}
+```

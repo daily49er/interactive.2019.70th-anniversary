@@ -12,16 +12,16 @@ router.route('/').get((req, res) => {
 // POST request
 router.route('/add').post((req, res) => {
     const name = req.body.name;
-    // const linkedin = req.body.social.linkedin;
-    // const twitter = req.body.social.twitter;
-    // const instagram = req.body.social.instagram;
-    // const github = req.body.social.github;
+    const linkedin = req.body.social.linkedin;
+    const twitter = req.body.social.twitter;
+    const instagram = req.body.social.instagram;
+    const github = req.body.social.github;
     const newStaff = new Staff({
-        name
-        // linkedin,
-        // twitter,
-        // instagram,
-        // github,
+        name,
+        linkedin,
+        twitter,
+        instagram,
+        github,
     });
    
 

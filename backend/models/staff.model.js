@@ -9,12 +9,12 @@ const staffSchema = new Schema({
         unique: true,
         minlength: 3
     }, 
-    // social: {
-    //     linkedin: String, 
-    //     twitter: String,
-    //     instagram: String,
-    //     github: String,
-    // }
+    social: {
+        linkedin: String, 
+        twitter: String,
+        instagram: String,
+        github: String,
+    }
 }, {
         timestamps: true,
 });
