@@ -9,15 +9,16 @@ const staffSchema = new Schema({
         unique: true,
         minlength: 3
     }, 
-    social: {
-        linkedin: String, 
-        twitter: String,
-        instagram: String,
-    }
+    // social: {
+    //     linkedin: String, 
+    //     twitter: String,
+    //     instagram: String,
+    //     github: String,
+    // }
 }, {
         timestamps: true,
 });
 
 const Staff = mongoose.model('Staff', staffSchema);
 
-module.exports = User;
+module.exports = Staff;

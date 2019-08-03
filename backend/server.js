@@ -23,10 +23,10 @@ connection.once('open', () => (
 
 // Require and use files
 const staffRouter = require('./routes/staff');
-const timelineRouter = rquire('./routes/timeline')
+const timelineRouter = require('./routes/timeline')
 
-app.use('staff', staffRouter);
-app.use('timeline', timelineRouter);
+app.use('/staff', staffRouter);
+app.use('/timeline', timelineRouter);
 
 // Starts the server 
 app.listen(port, () => {

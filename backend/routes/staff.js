@@ -5,21 +5,23 @@ let Staff = require('../models/staff.model')
 router.route('/').get((req, res) => {
     // get list of all staff, returns a promise in JSON format 
     Staff.find()
-    .then(staff => res.json())
+    .then(staff => res.json(staff))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 // POST request
 router.route('/add').post((req, res) => {
     const name = req.body.name;
-    const linkedin = req.body.social.linkedin;
-    const twitter = req.body.social.twitter;
-    const instagram = req.body.social.instagram;
+    // const linkedin = req.body.social.linkedin;
+    // const twitter = req.body.social.twitter;
+    // const instagram = req.body.social.instagram;
+    // const github = req.body.social.github;
     const newStaff = new Staff({
-        username,
-        linkedin,
-        twitter,
-        instagram,
+        name
+        // linkedin,
+        // twitter,
+        // instagram,
+        // github,
     });
    
 

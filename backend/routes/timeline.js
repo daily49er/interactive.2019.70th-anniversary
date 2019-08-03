@@ -5,7 +5,7 @@ let Timeline = require('../models/staff.model')
 router.route('/').get((req, res) => {
     // get list of all staff, returns a promise in JSON format 
     Timeline.find()
-    .then(timeline => res.json())
+    .then(timeline => res.json(timeline))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
@@ -17,7 +17,7 @@ router.route('/add').post((req, res) => {
     const picture = req.body.picture;
     const video = req.body.video;
     const article = req.body.article;
-    const newStaff = new Staff({
+    const newEvent = new Timeline({
         event,
         date,
         description,
@@ -26,8 +26,8 @@ router.route('/add').post((req, res) => {
         article,
     });
 
-    newStaff.save()
-    .then(() => res.json('Staff member added!'))
+    newEvent.save()
+    .then(() => res.json('Event added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
