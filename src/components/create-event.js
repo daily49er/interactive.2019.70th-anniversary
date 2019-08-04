@@ -13,6 +13,7 @@ export default class CreateEvent extends Component {
         this.onChangePicture = this.onChangePicture.bind(this);
         this.onChangeVideo = this.onChangeVideo.bind(this);
         this.onChangeArticle = this.onChangeArticle.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             event: '',
@@ -39,11 +40,7 @@ export default class CreateEvent extends Component {
     }
 
     // Set state when date is changed
-    onChangeDate(date) {
-        this.setState({
-            date: date           
-        });
-    }
+    onChangeDate = date => this.setState({date})
 
     // Set state when description is changed
     onChangeDescription(e) {
@@ -106,7 +103,7 @@ export default class CreateEvent extends Component {
                         <label>Date: </label>
                         <div>
                             <DatePicker
-                            selected = {this.state.date}
+                            value = {this.state.date}
                             onChange = {this.onChangeDate}
                             />
                         </div>
