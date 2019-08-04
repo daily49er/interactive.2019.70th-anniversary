@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export default class Navbar extends Component {
-    render() {
-        return (
-            <nav className = "navbar navbar-dark bg-dark navbar-expand-lg">
-                <Link to = "/" className = "navbar-brand">Daily Forty-Niner</Link>
-                <div className="collapse navbar-collapse">
-                    <ul className = "navbar-nav mr-auto">
-                        <li className = "navbar-item">
-                            <Link to = "/" className = "nav-link">Timeline</Link>
-                        </li>
-                        <li className = "navbar-item">
-                            <Link to = "/create" className = "nav-link">Create Event</Link>
-                        </li>
-                        <li className = "navbar-item">
-                            <Link to = "/staff" className = "nav-link">Create Staff</Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        )
-    }
+// Bootstrap Components
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+
+export default class Navigation extends Component {
+  render() {
+    return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+                <Nav.Link href="#features">Features</Nav.Link>
+                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </NavDropdown>
+            </Nav>
+            <Nav>
+                <Nav.Link href="#deets">More deets</Nav.Link>
+                <Nav.Link eventKey={2} href="#memes">
+                    Dank memes
+                    </Nav.Link>
+            </Nav>
+        </Navbar.Collapse>
+    </Navbar>
+    );
+  }
 }

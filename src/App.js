@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 /// COMPONENTS ///
-import Navbar from "./components/navbar";
+import Navigation from "./components/navbar";
 import EventsList from "./components/event-list";
 import EditEvent from "./components/edit-event";
 import CreateEvent from "./components/create-event";
@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className = "container">
-      <Navbar />
+      <Navigation />
         <br/>
         <Route path="/" exact component = {EventsList} />
         <Route path="/edit/:id" exact component = {EditEvent} />
