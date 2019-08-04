@@ -22,7 +22,7 @@ function App() {
         <Route path="/" exact component = {EventsList} />
         <Route path="/edit/:id" exact component = {EditEvent} />
         <Route path="/create" component = {CreateEvent} />
-        <Route path="/staff" component = {CreateStaff} />
+        <Route path="/add-staff" component = {CreateStaff} />
       </div>
     </Router>
    

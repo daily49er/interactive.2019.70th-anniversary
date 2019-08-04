@@ -108,7 +108,7 @@ nodemon server'
 
 # Frontend
 
-1. Add Bootstrap framework to make styling easier
+1. yarn add react-bootstrap bootstrap
 
 ```
 $ yarn add bootstrap --latest
