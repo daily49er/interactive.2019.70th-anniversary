@@ -82,7 +82,17 @@ export default class CreateEvent extends Component {
         }
         console.log(myEvent);
 
-        window.location = '/';
+        this.setState({
+            event: '',
+            date: new Date(),
+            description: '', 
+            picture: '',
+            video: '',
+            article: '',
+        })
+
+        // Return to homepage
+        // window.location = '/';
     }
  
     render() {

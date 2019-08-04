@@ -9,6 +9,18 @@ const staffSchema = new Schema({
         unique: true,
         minlength: 3
     }, 
+    title: {
+        type: String,
+        required: true,
+        unique: true,
+        minlength: 3
+    }, 
+    photo: {
+        type: String,
+        required: true,
+        unique: true,
+        minlength: 3
+    },
     social: {
         linkedin: String, 
         twitter: String,
