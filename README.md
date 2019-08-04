@@ -73,7 +73,7 @@ Using MongoDB Atlas. Used a connection string
 
 I chose MongoDB to store information and then retrieve it quickly later.
 
-# Dependencies
+# Backend
 
 ```bash
 npm install express cors mongoose dotenv
@@ -105,3 +105,34 @@ nodemon server'
 	}
 }
 ```
+
+# Frontend
+
+1. Add Bootstrap framework to make styling easier
+
+```
+$ yarn add bootstrap --latest
+
+import "bootstrap/dist/css/bootstrap.min.css"
+```
+
+2. Set up React Router to make it easier to route different urls to different React components
+
+```
+$ yarn add react-router-dom
+```
+
+Router element
+
+```
+<Router>
+    <Navbar />
+    <br>
+    <Route path="/" exact component = {EventsList} />
+    <Route path="/edit/:id" exact component = {EditEvent} />
+    <Route path="/create" component = {CreateEvent} />
+    <Route path="/staff" component = {CreateStaff} />
+</Router>
+```
+
+3. Set up form and install React Date Picker
