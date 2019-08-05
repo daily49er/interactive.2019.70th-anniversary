@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 
 export default class CreateStaff extends Component {
@@ -87,6 +88,10 @@ export default class CreateStaff extends Component {
             github: this.state.github,
         }
         console.log(staff);
+
+        // Send member data (POST REQUEST) to backend
+        axios.post('http://localhost:5000/staff/add', staff)
+        .then(res => console.log(res.data));
 
         this.setState({
             name: '',

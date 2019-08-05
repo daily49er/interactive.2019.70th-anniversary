@@ -76,8 +76,8 @@ I chose MongoDB to store information and then retrieve it quickly later.
 # Backend
 
 ```bash
-npm install express cors mongoose dotenv
-npm install -g nodemon
+$ yarn add express cors mongoose dotenv
+$ yarn add nodemon
 ```
 
 1. Create cluster and set up server.js
@@ -85,7 +85,7 @@ npm install -g nodemon
 2. Run server
 
 ```bash
-nodemon server'
+$ nodemon server
 ```
 
 3. Create env, copy connection string, create environmental variable in .env to establish MongoDB database connection
@@ -135,4 +135,14 @@ Router element
 </Router>
 ```
 
-3. Set up form and install React Date Picker
+3. Set up forms and install React Date Picker
+
+```
+$ yarn add react-datepicker
+```
+
+4. Install axios library to send HTTP requests to backend (promise based HTTP client for the browser and node.js)
+
+```
+$ yarn add axios
+```
