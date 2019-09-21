@@ -24,38 +24,51 @@ export default class EventsList extends Component {
     render() {
         return (
             <div className="home-dashboard">
-                {/* <img src={"img/escape.jpg"} className="bg" />
-                {this.props.children} */}
-                {/* <Fade {...fadeProperties}> */}
-                    {/* <div className="each-fade"> */}
-                    <div className="image-container">
-                        <img src={fadeImages[0]} className="bg" />
-                    </div>
-                    <div className="celebration">
-                        <h1>Celebrating 70 Years of</h1>
-                    </div>
-                    <div className="typeContainer">
-                        <div className="typewriter">
-                            <h1>The cat and the hat.</h1>
+                <img src={"img/escape.jpg"} className="bg" />
+                <Fade {...fadeProperties}>
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[0]} className="bg" />
+                        </div>
+                        <div className="celebration">
+                            <h1>Celebrating 70 Years of</h1>
+                        </div>
+                        <div className="typeContainer">
+                            <div className="typewriter">
+                                <h1>excellence.</h1>
+                            </div>
                         </div>
                     </div>
                    
-                    {/* <h2>Quality</h2>
-                    </div>
                     <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[1]} className="bg" />
+                        <div className="image-container">
+                            <img src={fadeImages[1]} className="bg" />
+                        </div>
+                        <div className="celebration">
+                            <h1>Celebrating 70 Years of</h1>
+                        </div>
+                        <div className="typeContainer">
+                            <div className="typewriter">
+                                <h1>integrity.</h1>
+                            </div>
+                        </div>
                     </div>
-                    <h2>Second Slide</h2>
-                    </div>
+
                     <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[2]} className="bg"/>
+                        <div className="image-container">
+                            <img src={fadeImages[2]} className="bg"/>
+                        </div>
+                        <div className="celebration">
+                            <h1>Celebrating 70 Years of</h1>
+                        </div>
+                        <div className="typeContainer">
+                            <div className="typewriter">
+                                <h1>excellence.</h1>
+                            </div>
+                        </div>
                     </div>
-                    <h2>Third Slide</h2>
-                    </div> */} 
-                {/* </Fade> */}
-                {this.props.children}
+                    {this.props.children}
+                </Fade>
             </div>
         )
     }
