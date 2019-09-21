@@ -10,7 +10,7 @@ const fadeImages = [
 ];
 
 const fadeProperties = {
-    duration: 3700,
+    duration: 5000,
     transitionDuration: 500,
     infinite: true,
     indicators: false,
@@ -26,12 +26,21 @@ export default class EventsList extends Component {
             <div className="home-dashboard">
                 {/* <img src={"img/escape.jpg"} className="bg" />
                 {this.props.children} */}
-                <Fade {...fadeProperties}>
-                    <div className="each-fade">
+                {/* <Fade {...fadeProperties}> */}
+                    {/* <div className="each-fade"> */}
                     <div className="image-container">
                         <img src={fadeImages[0]} className="bg" />
                     </div>
-                    <h2>First Slide</h2>
+                    <div className="celebration">
+                        <h1>Celebrating 70 Years of</h1>
+                    </div>
+                    <div className="typeContainer">
+                        <div className="typewriter">
+                            <h1>The cat and the hat.</h1>
+                        </div>
+                    </div>
+                   
+                    {/* <h2>Quality</h2>
                     </div>
                     <div className="each-fade">
                     <div className="image-container">
@@ -44,8 +53,8 @@ export default class EventsList extends Component {
                         <img src={fadeImages[2]} className="bg"/>
                     </div>
                     <h2>Third Slide</h2>
-                    </div>
-                </Fade>
+                    </div> */} 
+                {/* </Fade> */}
                 {this.props.children}
             </div>
         )

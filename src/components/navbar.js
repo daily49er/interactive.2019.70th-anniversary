@@ -10,12 +10,13 @@ export default class Navigation extends Component {
   render() {
     return (
     <div className="container-fluid">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        {/* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"> */}
+        <Navbar collapseOnSelect expand="lg" variant="dark">
             <Navbar.Brand href="/">70th Anniversary</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Daily Forty-Niner</Nav.Link>
+                    <Nav.Link href="https://daily49er.com" target="__blank__">Daily Forty-Niner</Nav.Link>
                     <Nav.Link href="create">Create Event</Nav.Link>
                     <Nav.Link href="add-staff">Add Staff</Nav.Link>
                     <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
