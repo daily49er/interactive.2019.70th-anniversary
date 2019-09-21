@@ -146,3 +146,9 @@ $ yarn add react-datepicker
 ```
 $ yarn add axios
 ```
+
+5. Add React-Slideshow, supports slide, fade, and zoom effects
+
+```
+$ yarn add react-slideshow-image
+```
