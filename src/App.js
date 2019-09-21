@@ -7,7 +7,7 @@ import './App.css';
 
 /// COMPONENTS ///
 import Navigation from "./components/navbar";
-import EventsList from "./components/event-list";
+import Home from "./components/home";
 import EditEvent from "./components/edit-event";
 import CreateEvent from "./components/create-event";
 import CreateStaff from "./components/create-staff";
@@ -19,7 +19,7 @@ function App() {
       <div className = "container">
       <Navigation />
         <br/>
-        <Route path="/" exact component = {EventsList} />
+        <Route path="/" exact component = {Home} />
         <Route path="/edit/:id" exact component = {EditEvent} />
         <Route path="/create" component = {CreateEvent} />
         <Route path="/add-staff" component = {CreateStaff} />
