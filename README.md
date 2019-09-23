@@ -158,3 +158,15 @@ $ yarn add react-slideshow-image
 ```
 $ yarn add react-typist
 ```
+
+7. Add react-before-after-slider
+
+```
+$ yarn add react-before-after-slider
+```
+
+8. Add react-image-timeline
+
+```
+$ yarn add react-image-timeline
+```

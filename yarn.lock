@@ -2544,7 +2544,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -8446,6 +8446,19 @@ react-app-polyfill@^1.0.1:
     regenerator-runtime "0.13.2"
     whatwg-fetch "3.0.0"
 
+react-before-after-slider@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-before-after-slider/-/react-before-after-slider-1.0.4.tgz#86bd00ec622132ecc632d5ce32b6ad16aa5ab120"
+  integrity sha512-zXuaiDqJkgkZ/9RaHKXS5Dh+zsOQW5b9nPgQbXt1fcI1bF4q+l/KCM50qhhH/EHKLhbtUYAb7nhqViowFbC3ZQ==
+  dependencies:
+    classnames "^2.2.5"
+    react-block-image "^1.0.0"
+
+react-block-image@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-block-image/-/react-block-image-1.0.0.tgz#5c46d7a115fa7efa70d477a2580ec0c9b2106283"
+  integrity sha1-XEbXoRX6fvpw1HeiWA7AybIQYoM=
+
 react-bootstrap@^1.0.0-beta.10:
   version "1.0.0-beta.10"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0-beta.10.tgz#369785084a8f5524b9a37c8d9c7c84a94e387a76"
@@ -8549,6 +8562,11 @@ react-fit@^1.0.3:
   dependencies:
     detect-element-overflow "^1.1.1"
     prop-types "^15.6.0"
+
+react-image-timeline@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-image-timeline/-/react-image-timeline-2.0.2.tgz#c4640919918adf0ae8d8b3a27592a833c5d44058"
+  integrity sha512-K/FOhVHGpvyeqpz5Fc72J+tyDhjX6JCdjsGWWYGlM+S0PXoxPoy1p+zlO7S1oWZPbJCBZIAbyZmLy3fFNK1RoA==
 
 react-is@^16.3.2, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
