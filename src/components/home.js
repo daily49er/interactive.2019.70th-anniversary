@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Fade } from 'react-slideshow-image';
+import Typist from 'react-typist';
  
 const fadeImages = [
   'img/escape.jpg',
@@ -37,6 +38,18 @@ export default class EventsList extends Component {
                     <div className="typeContainer">
                         <div className="typewriter">
                             <h1>The cat and the hat.</h1>
+                        </div>
+
+                    </div>
+                    <div className="typeContainer">
+                        <div className = "backspace">
+                            <Typist cursor={{ show: false }}>
+                                <span>Quality</span>
+                                <Typist.Backspace count={7} delay={1000} />
+                                <span>Excellence</span>
+                                <Typist.Backspace count={10} delay={1000} />
+                                <span>Integrity</span>
+                            </Typist>
                         </div>
                     </div>
                    

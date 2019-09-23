@@ -152,3 +152,9 @@ $ yarn add axios
 ```
 $ yarn add react-slideshow-image
 ```
+
+6. Add react-typist
+
+```
+$ yarn add react-typist
+```
