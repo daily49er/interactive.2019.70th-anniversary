@@ -3,7 +3,7 @@ import { Fade } from 'react-slideshow-image';
 import Typist from 'react-typist';
  
 const fadeImages = [
-  'img/escape.jpg',
+  'img/palms.jpg',
   'img/flower.jpg',
   'img/open.jpg',
   'img/people.jpg',

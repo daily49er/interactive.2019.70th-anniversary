@@ -11,6 +11,7 @@ import Home from "./components/home";
 import EditEvent from "./components/edit-event";
 import CreateEvent from "./components/create-event";
 import CreateStaff from "./components/create-staff";
+import Timeline from "./components/timeline";
 
 
 function App() {
