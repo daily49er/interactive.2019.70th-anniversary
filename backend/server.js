@@ -2,6 +2,7 @@
 const express = require('express');
 const cors = require('cors')
 const mongoose = require('mongoose') // helps connect to MongoDB
+const path = require('path');
 
 require('dotenv').config();
 
@@ -27,6 +28,14 @@ const timelineRouter = require('./routes/timeline')
 
 app.use('/staff', staffRouter);
 app.use('/timeline', timelineRouter);
+
+// serve build folder
+if(process.env.NODE_ENV === 'production'){
+	app.use(express.static( 'build' ));
+	app.get('*', (req, res) => {
+		res.sendFile(path.join(__dirname, 'build', 'index.html')); // relative path
+	});
+}
 
 // Starts the server 
 app.listen(port, () => {

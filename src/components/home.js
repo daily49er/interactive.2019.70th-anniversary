@@ -10,6 +10,13 @@ const fadeImages = [
   'img/standing.jpg',
 ];
 
+const traits = [
+    'News',
+    'Integrity',
+    'Excellence', 
+    'Boldness'
+];
+
 const fadeProperties = {
     duration: 5000,
     transitionDuration: 500,
@@ -32,26 +39,25 @@ export default class EventsList extends Component {
                     <div className="image-container">
                         <img src={fadeImages[0]} className="bg" />
                     </div>
-                    <div className="celebration">
-                        <h1>Celebrating 70 Years of</h1>
+                  
+                    
+                <div className="celebration">
+                   <div className = "backspace">
+                        <p> Celebrating</p>
+                        <p>70 Years</p>
+                        {/*
+                        <Typist cursor={{ show: true }}>
+                            
+                            <span>Quality</span>
+                            <Typist.Backspace count={7} delay={1000} />
+                            <span>Excellence</span>
+                            <Typist.Backspace count={10} delay={1000} />
+                            <span>Integrity</span>
+                            
+                        </Typist>
+                        */}
                     </div>
-                    <div className="typeContainer">
-                        <div className="typewriter">
-                            <h1>The cat and the hat.</h1>
-                        </div>
-
-                    </div>
-                    <div className="typeContainer">
-                        <div className = "backspace">
-                            <Typist cursor={{ show: false }}>
-                                <span>Quality</span>
-                                <Typist.Backspace count={7} delay={1000} />
-                                <span>Excellence</span>
-                                <Typist.Backspace count={10} delay={1000} />
-                                <span>Integrity</span>
-                            </Typist>
-                        </div>
-                    </div>
+                </div>
                    
                     {/* <h2>Quality</h2>
                     </div>

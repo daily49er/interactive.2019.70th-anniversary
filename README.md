@@ -170,3 +170,21 @@ $ yarn add react-before-after-slider
 ```
 $ yarn add react-image-timeline
 ```
+
+# Deployment
+1. server.js port available
+2. configure mongodb uri
+3. serve build folder
+```
+$ yarn run build
+```
+
+We need build folder to put react application for heroku to see
+Put build folder into folder
+
+4. configure heroku post-build
+
+## Pushing Application to Heroku
+```
+$ heroku create anniversary-70
+```
