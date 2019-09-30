@@ -132,104 +132,22 @@ h3 {
 /* Homepage */
 .celebration {
   position: absolute;
+  z-index: 999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.celebration p {
-  font-size: 120px;
+.celebration h1 {
+  font-size: 10vw;
   color: white;
-  text-shadow: 2px 2px #000;
+  text-shadow: 5px 5px #000;
 }
 
-/*.headline{
-  display: inline-block;
-}*/
 
-.typeContainer {
-  display: flex;
-  flex-wrap: wrap;
-  /*display: inline-block;*/
-  align-items: center;
-  justify-content: center;
-}
 
-.typewriter {
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
-}
 
-.typewriter h1 {
-  color: white;
-  font-size: 60px;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation:
-    typing 3.5s steps(40, end),
-    blink .75s step-end infinite;
-}
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
 
-  to {
-    width: 100%
-  }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: orange;
-  }
-}
-
-.backspace {
-  color: white;
-  font-size: 90px;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
- /* border-right: .15em solid orange;*/
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-   /* blink-caret .75s step-end infinite;*/
-}
-
-.resposive_text {
-    font-size: 90px; 
-    font-weight: 600;
-    /*here put anything you want for desktop size*/
-}
-
-@media (max-width: 500px) {
-  .backspace  {
-        font-size: 60px; 
-        /*here put anything you want for mobile size*/
-  }
-
-}
 

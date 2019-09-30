@@ -187,4 +187,9 @@ Put build folder into folder
 ## Pushing Application to Heroku
 ```
 $ heroku create anniversary-70
+$ heroku addons:create mongolab:sandbox
+$ git add -A
+$ git commit -m "MESSAGE"
+$ git push heroku master
+$ heroku open
 ```
