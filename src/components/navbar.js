@@ -29,8 +29,8 @@ export default class Navigation extends Component {
                     </NavDropdown>*/}
                 </Nav>
                 <Nav>
-                    <Nav.Link href="timeline">Timeline</Nav.Link>
-                    <Nav.Link href="staff">-70th Team-</Nav.Link>
+                      {/*<Nav.Link href="timeline">Timeline</Nav.Link>*/}
+                      {/*<Nav.Link href="staff">-70th Team-</Nav.Link>*/}
                     
                     {/* <Nav.Link href="#deets">More deets</Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">

@@ -20,10 +20,12 @@ code {
 
 .navbar a{ 
   font-size: 1.3em;
+  text-shadow: 2px 2px #000;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.8) !important;
+    text-shadow: 2px 2px #000;
 }
 
 .container-fluid {

@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { Fade } from 'react-slideshow-image';
  
 const fadeImages = [
-  'img/palms.jpg',
-  'img/flower.jpg',
-  'img/open.jpg',
-  'img/people.jpg',
-  'img/standing.jpg',
+  'img/football.png',
+  'img/band.jpg',
+  'img/khmer.jpg',
+  'img/old_soroptimist.jpg',
+  'img/parking.png',
+  'img/womensstudies.png',
 ];
 
 const traits = [
@@ -40,19 +41,31 @@ export default class EventsList extends Component {
                     <div className="image-container">
                         <img src={fadeImages[0]} className="bg" />
                     </div>
-                    <h2>First Slide</h2>
                     </div>
                     <div className="each-fade">
                     <div className="image-container">
                         <img src={fadeImages[1]} className="bg" />
                     </div>
-                    <h2>Second Slide</h2>
                     </div>
                     <div className="each-fade">
                     <div className="image-container">
                         <img src={fadeImages[2]} className="bg"/>
                     </div>
-                    <h2>Third Slide</h2>
+                    </div>
+                    <div className="each-fade">
+                    <div className="image-container">
+                        <img src={fadeImages[3]} className="bg"/>
+                    </div>
+                    </div>
+                    <div className="each-fade">
+                    <div className="image-container">
+                        <img src={fadeImages[4]} className="bg"/>
+                    </div>
+                    </div>
+                    <div className="each-fade">
+                    <div className="image-container">
+                        <img src={fadeImages[5]} className="bg"/>
+                    </div>
                     </div>
                 </Fade>
                 {this.props.children}
