@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import { Fade } from "react-slideshow-image";
 
 const fadeImages = [
-    "img/football.png",
-    "img/band.jpg",
-    "img/khmer.jpg",
+    "img/football.jpg",
+    "img/band_football.jpg",
     "img/old_soroptimist.jpg",
-    "img/parking.png",
-    "img/womensstudies.png"
+    "img/parking.jpg",
+    "img/womensstudies.jpg"
 ];
 
 const traits = ["News", "Integrity", "Excellence", "Boldness"];
@@ -49,14 +48,6 @@ export default class EventsList extends Component {
                         <div className="image-container">
                             <img src={fadeImages[2]} className="bg" />
                         </div>
-                        <div className="celebration">
-                            <h1>Celebrating 70 Years of</h1>
-                        </div>
-                        <div className="typeContainer">
-                            <div className="typewriter">
-                                <h1>excellence.</h1>
-                            </div>
-                        </div>
                     </div>
 
                     <div className="each-fade">
@@ -67,11 +58,6 @@ export default class EventsList extends Component {
                     <div className="each-fade">
                         <div className="image-container">
                             <img src={fadeImages[4]} className="bg" />
-                        </div>
-                    </div>
-                    <div className="each-fade">
-                        <div className="image-container">
-                            <img src={fadeImages[5]} className="bg" />
                         </div>
                     </div>
                 </Fade>
