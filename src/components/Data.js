@@ -13,7 +13,19 @@ class Data extends Component {
         const timelineData = [
             {
                 text: 'hello',
-                date: 'March 03 2019',
+                date: 'January 1, 2019',
+                category: {
+                    tag: 'old', 
+                    color: '#018f69'
+                },
+                link: {
+                    url: 'shangsan.me',
+                    text: 'click here'
+                }
+            }, 
+            {
+                text: 'hello',
+                date: 'December 2, 2017',
                 category: {
                     tag: 'old', 
                     color: '#018f69'
@@ -25,7 +37,7 @@ class Data extends Component {
             }, 
             {
                 text: 'test',
-                date: 'March 04 2019',
+                date: 'November 9, 2018',
                 category: {
                     tag: 'old', 
                     color: '#018f69'
@@ -37,7 +49,7 @@ class Data extends Component {
             }
         ];
 
-        const events = timelineData.map((event) => 
+        const events = timelineData.sort( (a, b) => new Date(b.date) - new Date(a.date) ).map((event) => 
             // <li key = {event.date}>{event.text}</li>
             <div className="timeline-item">
                 <div className="timeline-item-content">
