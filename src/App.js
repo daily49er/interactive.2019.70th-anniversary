@@ -11,6 +11,8 @@ import Home from "./components/home";
 import EditEvent from "./components/edit-event";
 import CreateEvent from "./components/create-event";
 import CreateStaff from "./components/create-staff";
+import Timeline from "./components/timeline";
+import Soroptimist from "./components/articles/soroptimist";
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <Route path="/edit/:id" exact component = {EditEvent} />
         <Route path="/create" component = {CreateEvent} />
         <Route path="/add-staff" component = {CreateStaff} />
+        <Route path="/soroptimist" component = {Soroptimist} />
       </div>
     </Router>
    

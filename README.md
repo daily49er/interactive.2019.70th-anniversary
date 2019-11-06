@@ -152,3 +152,44 @@ $ yarn add axios
 ```
 $ yarn add react-slideshow-image
 ```
+
+6. Add react-typist
+
+```
+$ yarn add react-typist
+```
+
+7. Add react-before-after-slider
+
+```
+$ yarn add react-before-after-slider
+```
+
+8. Add react-image-timeline
+
+```
+$ yarn add react-image-timeline
+```
+
+# Deployment
+1. server.js port available
+2. configure mongodb uri
+3. serve build folder
+```
+$ yarn run build
+```
+
+We need build folder to put react application for heroku to see
+Put build folder into folder
+
+4. configure heroku post-build
+
+## Pushing Application to Heroku
+```
+$ heroku create anniversary-70
+$ heroku addons:create mongolab:sandbox
+$ git add -A
+$ git commit -m "MESSAGE"
+$ git push heroku master
+$ heroku open
+```

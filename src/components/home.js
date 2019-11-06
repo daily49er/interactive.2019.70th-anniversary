@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
-import { Fade } from 'react-slideshow-image';
- 
+import React, { Component } from "react";
+import { Fade } from "react-slideshow-image";
+
 const fadeImages = [
-  'img/escape.jpg',
-  'img/flower.jpg',
-  'img/open.jpg',
-  'img/people.jpg',
-  'img/standing.jpg',
+    "img/football.png",
+    "img/band.jpg",
+    "img/khmer.jpg",
+    "img/old_soroptimist.jpg",
+    "img/parking.png",
+    "img/womensstudies.png"
 ];
+
+const traits = ["News", "Integrity", "Excellence", "Boldness"];
 
 const fadeProperties = {
     duration: 5000,
@@ -18,17 +21,33 @@ const fadeProperties = {
     onChange: (oldIndex, newIndex) => {
         console.log(`fade transition from ${oldIndex} to ${newIndex}`);
     }
-}
+};
 
 export default class EventsList extends Component {
     render() {
         return (
             <div className="home-dashboard">
-                <img src={"img/escape.jpg"} className="bg" />
+                <div className="celebration">
+                    <h1>Celebrating</h1>
+                    <center>
+                        <h1>70 Years</h1>
+                    </center>
+                </div>
                 <Fade {...fadeProperties}>
                     <div className="each-fade">
                         <div className="image-container">
                             <img src={fadeImages[0]} className="bg" />
+                        </div>
+                    </div>
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[1]} className="bg" />
+                        </div>
+                    </div>
+
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[2]} className="bg" />
                         </div>
                         <div className="celebration">
                             <h1>Celebrating 70 Years of</h1>
@@ -36,40 +55,28 @@ export default class EventsList extends Component {
                         <div className="typeContainer">
                             <div className="typewriter">
                                 <h1>excellence.</h1>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div className="each-fade">
-                        <div className="image-container">
-                            <img src={fadeImages[1]} className="bg" />
-                        </div>
-                        <div className="celebration">
-                            <h1>Celebrating 70 Years of</h1>
-                        </div>
-                        <div className="typeContainer">
-                            <div className="typewriter">
-                                <h1>integrity.</h1>
                             </div>
                         </div>
                     </div>
 
                     <div className="each-fade">
                         <div className="image-container">
-                            <img src={fadeImages[2]} className="bg"/>
-                        </div>
-                        <div className="celebration">
-                            <h1>Celebrating 70 Years of</h1>
-                        </div>
-                        <div className="typeContainer">
-                            <div className="typewriter">
-                                <h1>excellence.</h1>
-                            </div>
+                            <img src={fadeImages[3]} className="bg" />
                         </div>
                     </div>
-                    {this.props.children}
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[4]} className="bg" />
+                        </div>
+                    </div>
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[5]} className="bg" />
+                        </div>
+                    </div>
                 </Fade>
+                {this.props.children}
             </div>
-        )
+        );
     }
 }
