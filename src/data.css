@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *,
 *::before,
 *::after {
@@ -9,6 +12,22 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    background-color: #555;
+    background: url("/img/aerial_csulbcampus.jpg") no-repeat center center fixed;
+    background-size: cover;
+    /*filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);*/
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+}
+
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 .timeline-container {
@@ -54,7 +73,7 @@ body {
     position: relative;
     width: 400px;
     max-width: 70%;
-    text-align: right;
+    text-align: left;
 }
 
 .timeline-item-content::after {
@@ -97,9 +116,15 @@ body {
     right: 5px;
 }
 
+.timeline-item-content h1 {
+    font-size: 1.5rem;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: black;
+}
+
 .timeline-item-content time {
     color: #777;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -107,7 +132,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin: 15px 0;
-    max-width: 250px;
+    max-width: 350px;
 }
 
 .timeline-item-content a {
@@ -120,7 +145,15 @@ body {
     font-size: 12px;
 }
 
-.timeline-item-content .circle {
+.timeline-item-content img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-item .circle {
     background-color: #fff;
     border: 3px solid #e17b77;
     border-radius: 50%;
