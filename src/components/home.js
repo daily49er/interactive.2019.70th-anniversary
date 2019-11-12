@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import { Fade } from 'react-slideshow-image';
- 
+import React, { Component } from "react";
+import { Fade } from "react-slideshow-image";
+import Button from 'react-bootstrap/Button'
+
 const fadeImages = [
-  'img/football.png',
-  'img/band.jpg',
-  'img/khmer.jpg',
-  'img/old_soroptimist.jpg',
-  'img/parking.png',
-  'img/womensstudies.png',
+    "img/football.jpg",
+    "img/band_football.jpg",
+    "img/old_soroptimist.jpg",
+    "img/parking.jpg",
+    "img/womensstudies.jpg"
 ];
 
-const traits = [
-    'News',
-    'Integrity',
-    'Excellence', 
-    'Boldness'
-];
+const traits = ["News", "Integrity", "Excellence", "Boldness"];
 
 const fadeProperties = {
     duration: 5000,
@@ -26,7 +21,7 @@ const fadeProperties = {
     onChange: (oldIndex, newIndex) => {
         console.log(`fade transition from ${oldIndex} to ${newIndex}`);
     }
-}
+};
 
 export default class EventsList extends Component {
     render() {
@@ -34,42 +29,43 @@ export default class EventsList extends Component {
             <div className="home-dashboard">
                 <div className="celebration">
                     <h1>Celebrating</h1>
-                    <center><h1>70 Years</h1></center>
+                    <center>
+                        <h1>70 Years</h1>
+                         <Button variant="outline-light">Explore the Timeline</Button>
+                    </center>
                 </div>
                 <Fade {...fadeProperties}>
                     <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[0]} className="bg" />
-                    </div>
-                    </div>
-                    <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[1]} className="bg" />
-                    </div>
+                        <div className="image-container">
+                            <img src={fadeImages[0]} className="bg" />
+                        </div>
                     </div>
                     <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[2]} className="bg"/>
+                        <div className="image-container">
+                            <img src={fadeImages[1]} className="bg" />
+                        </div>
                     </div>
+
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[2]} className="bg" />
+                        </div>
+                    </div>
+
+                    <div className="each-fade">
+                        <div className="image-container">
+                            <img src={fadeImages[3]} className="bg" />
+                        </div>
                     </div>
                     <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[3]} className="bg"/>
-                    </div>
-                    </div>
-                    <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[4]} className="bg"/>
-                    </div>
-                    </div>
-                    <div className="each-fade">
-                    <div className="image-container">
-                        <img src={fadeImages[5]} className="bg"/>
-                    </div>
+                        <div className="image-container">
+                            <img src={fadeImages[4]} className="bg" />
+                        </div>
                     </div>
                 </Fade>
+
                 {this.props.children}
             </div>
-        )
+        );
     }
 }
