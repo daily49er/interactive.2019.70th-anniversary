@@ -1,4 +1,4 @@
-// Main 
+// Main
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
@@ -11,7 +11,7 @@ import Home from "./components/home";
 import EditEvent from "./components/edit-event";
 import CreateEvent from "./components/create-event";
 import CreateStaff from "./components/create-staff";
-import Timeline from "./components/Timeline";
+import Timeline from "./components/Data";
 import Soroptimist from "./components/articles/soroptimist";
 import Data from "./components/Data";
 
@@ -30,7 +30,7 @@ function App() {
         <Route path="/soroptimist" component = {Soroptimist} />
       </div>
     </Router>
-   
+
   );
 }
 

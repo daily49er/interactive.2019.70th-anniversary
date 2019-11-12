@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Fade } from "react-slideshow-image";
+import Button from 'react-bootstrap/Button'
 
 const fadeImages = [
     "img/football.jpg",
@@ -30,6 +31,7 @@ export default class EventsList extends Component {
                     <h1>Celebrating</h1>
                     <center>
                         <h1>70 Years</h1>
+                         <Button variant="outline-light">Explore the Timeline</Button>
                     </center>
                 </div>
                 <Fade {...fadeProperties}>
@@ -61,6 +63,7 @@ export default class EventsList extends Component {
                         </div>
                     </div>
                 </Fade>
+
                 {this.props.children}
             </div>
         );
