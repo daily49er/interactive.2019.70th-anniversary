@@ -76,7 +76,7 @@ class Data extends Component {
       },
       {
         "event": "Shark Lab established at CSULB",
-        "date": 1966,
+        "date": 'January 1966',
         "description": "The Shark Lab was established in 1966 when Dr. Donald Nelson joined the faculty at CSULB as part of Marine Biology program.",
         "img": "https://drive.google.com/uc?id=10f0BpjMtQO8ZHvudwJn9go6a9CSw-mBv",
         "url": "",
@@ -86,7 +86,7 @@ class Data extends Component {
       },
       {
         "event": "Forty-Niner Man makes its debut on campus",
-        "date": 1967,
+        "date": 'January 1967',
         "description": "President Carl W. McIntosh unveiled the bronze statue titled \"the Forty-Niner man,\" sculpted by Ben Barker and sponsored by Circle K.",
         "img": "https://drive.google.com/uc?id=1RqavoWZ4g0mDUOZETYd62BsNilMsZqn2",
         "url": "",
@@ -96,7 +96,7 @@ class Data extends Component {
       },
       {
         "event": "La Raza established at CSULB",
-        "date": 1967,
+        "date": 'January 1967',
         "description": "United Mexican American Students was established on campus. The organization would later become M.E.Ch.A and then La Raza.",
         "img": "",
         "url": "",
@@ -106,7 +106,7 @@ class Data extends Component {
       },
       {
         "event": "Steve Horn begins new term as president of Cal State Long Beach",
-        "date": 1970,
+        "date": 'January 1970',
         "description": "Steve Horn became the third university president and served for 18 years.",
         "img": "https://drive.google.com/uc?id=1-3_OGlGEK7Zv7g4S6fjhS_Tdt17Jinqf",
         "url": "https://drive.google.com/open?id=1XUad35Lyo0Y5iPghslGeW67tYBTRhSmu",
@@ -116,7 +116,7 @@ class Data extends Component {
       },
       {
         "event": "University Student Union opens",
-        "date": 1972,
+        "date": 'January 1972',
         "description": "The University Student Union was built with a cost of about $4.2 million.",
         "img": "https://drive.google.com/uc?id=1z6LC1BF9oTlPQE-1wR4hekZ5dJQ_sX98",
         "url": "https://drive.google.com/open?id=132vnjRhukVXgYKR-9skIgxEeQO84aLEZ",
@@ -126,7 +126,7 @@ class Data extends Component {
       },
       {
         "event": "Women's studies minor approved by the university",
-        "date": "Sept. 11, 1975",
+        "date": "September 11, 1975",
         "description": "Women's studies was established at the university as a \"special\" minor.",
         "img": "",
         "url": "https://drive.google.com/open?id=1ZnTwBZfepOhdR6XCrO-K8T2-699p8Uy_",
@@ -136,7 +136,7 @@ class Data extends Component {
       },
       {
         "event": "On-campus recycling center built",
-        "date": 1976,
+        "date": 'January 1976',
         "description": "The recycling center, located across the parking lot from the Walter Pyramid, was built with funding from ASI and the city of Long Beach.",
         "img": "",
         "url": "https://drive.google.com/open?id=12U1nK--Uut7WOO3er2qcV_5offTKQxjU",
@@ -216,7 +216,7 @@ class Data extends Component {
       },
       {
         "event": "Building for College of Business Administration opens",
-        "date": 1991,
+        "date": 'January 1991',
         "description": "The state-of-the-art building, featuring modern lecture halls and decision-support laboratories with multi-media capability, opened its doors for the first time.",
         "img": "https://drive.google.com/uc?id=1XOd_Iy0kQr527Zf57SmWkgLqTr_QEGL_",
         "url": "https://drive.google.com/open?id=1CLz9Bl7cMSxfcETMFMghQVzi-GRS1XUk",
@@ -246,8 +246,8 @@ class Data extends Component {
       },
       {
         "event": "Richard & Karen Carpenter Performing Arts Center opens",
-        "date": 1994,
-        "description": "NEEDS DESCRIPTION",
+        "date": 'January 1994',
+        "description": "",
         "img": "https://drive.google.com/uc?id=14Xu-rQTzxfbPoFhJkJYpwD5ny_ttJk7K",
         "url": "",
         "text": "",
@@ -266,8 +266,8 @@ class Data extends Component {
       },
       {
         "event": "Online Forty-Niner becomes a weekly version of the Daily Forty-Niner",
-        "date": "09/01/94",
-        "description": "N/A",
+        "date": "Septmber 1, 1994",
+        "description": "",
         "img": "https://drive.google.com/uc?id=1H7mcXxDFK1ySpogUngnQzw6H2vHlMDj3",
         "url": "",
         "text": "",
@@ -278,7 +278,7 @@ class Data extends Component {
         "event": "The Walter Pyramid opens",
         "date": "November 5, 1994",
         "description": "The Walter Pyramid, known at the time as The Pyramid, opened to a crowd of an estimated 10,000 people, much more than the anticipated 2,500. The 178-foot tall arena cost $22 million, with an initial seating capacity of 4,200.",
-        "img": "https://drive.google.com/uc?id=1ZPtosaip_IOsBt3kgdZjUWDOunCqh2XD",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Walter_Pyramid.jpg",
         "url": "https://drive.google.com/open?id=1ynIIEQWxUhCiDE2B1BYgplX6WisVouxc",
         "text": "read more",
         "tags": "",
@@ -286,7 +286,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB men's basketball wins Big West Conference",
-        "date": 1995,
+        "date": 'January 1995',
         "description": "The team became champions at the 1995 Big West Conference",
         "img": "",
         "url": "",
@@ -296,7 +296,7 @@ class Data extends Component {
       },
       {
         "event": "The central plant is completed",
-        "date": 1997,
+        "date": 'January 1997',
         "description": "The central plant finished construction at the university, providing campus buildings with air conditioning and heating, with the exception of the Pyramid, Carpenter Performing Arts Center and University Music Center.",
         "img": "",
         "url": "",
@@ -306,7 +306,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB women's volleyball have a winning season",
-        "date": 1998,
+        "date": 'January 1998',
         "description": "The women's volleyball team became the first NCAA Division I team in history to have an undefeated season and take home the 1998 National Championship.",
         "img": "https://drive.google.com/uc?id=1qaLkrkj9p7uahu7rBWC-LHOWVQnSVAMK",
         "url": "https://drive.google.com/open?id=1-qQoxyqX2G4Ew3GRVNcR_k1NRbjNPPMC",
@@ -316,7 +316,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB closes for the remainder of the day, prompted by 9/11 attacks",
-        "date": "Sept. 11, 2001",
+        "date": "September 11, 2001",
         "description": "Following the news that several U.S. cities were attacked, including the World Trade Center and the Pentagon, CSU Chancellor Charles B. Reed announced the closure of all 23 CSU campuses.",
         "img": "",
         "url": "https://drive.google.com/open?id=1bCDtSohCF466iMdfTYfKZvOVqyIwn7Pm",
@@ -326,7 +326,7 @@ class Data extends Component {
       },
       {
         "event": "Broman Hall and new Molecular and Life Science Center construction begins",
-        "date": 2002,
+        "date": 'January 2002',
         "description": "The school began construction on Brotman Hall and the Molecular and Life Science Center. The Fine Arts buildings also undergo updates.",
         "img": "",
         "url": "",
@@ -336,7 +336,7 @@ class Data extends Component {
       },
       {
         "event": "Arnold Schwarzenegger visits CSULB",
-        "date": "Sept. 3, 2003",
+        "date": "September 3, 2003",
         "description": "Arnold Schwarzenegger made his first public appearance at the university during his gubernatorial campaign.",
         "img": "https://drive.google.com/uc?id=1KbWLqEYGiQV0luDIekv9ojKXWiPzI34V",
         "url": "https://drive.google.com/open?id=1QqlUY07ILvB_LK7D28TykQYh0A8MB5zO",
@@ -346,7 +346,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB students stage walk-out in protest of raised tuition",
-        "date": 2004,
+        "date": 'January 2004',
         "description": "The California State Student Association organized a statewide protest on college campuses in response to Gov. Schwarzengger's proposed budget cut and tuition hike. Students marched outside Brotman Hall, which was locked down and guarded by police to keep protestors away.",
         "img": "https://drive.google.com/uc?id=1nt4MPk7NVZzDV5M8O_CGlc8pvilpuNkU",
         "url": "http://web.csulb.edu/~d49er/archives/2005/spring/news/volLVno106-csulb.shtml",
@@ -356,7 +356,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB President Robert C. Maxson retires, succeeded by F. King Alexander",
-        "date": 2006,
+        "date": 'January 2006',
         "description": "Maxson retired after 11 years and was succeeded by F. King Alexander as president.",
         "img": "https://drive.google.com/uc?id=1L-YefW9X7YN6tzEucfrTuCHwniJKrp3Y",
         "url": "https://drive.google.com/open?id=1W9S2l7tnGpW4zcifcCLFvQTmo4Fuh6Md",
@@ -386,7 +386,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB launches first President's Forum on International Human Rights",
-        "date": 2008,
+        "date": 'January 2008',
         "description": "The university organized the first President's Forum on International Human Rights. The 2008 theme was \"Modern Genocides and Global Responsibilities\" and over 6,000 people participated, including students, faculty, staff and members of the community.",
         "img": "",
         "url": "",
@@ -456,7 +456,7 @@ class Data extends Component {
       },
       {
         "event": "President Conoley confirms retirement of Prospector Pete",
-        "date": "September 11,2018",
+        "date": "September 11, 2018",
         "description": "President Jane Close Conoley announced the “retirement” of the 51-year-old Prospector Pete mascot. An ASI resolution recognizing prospetors' role in the California indigenous genocide prompted this decision.",
         "img": "https://drive.google.com/uc?id=1sctMDYxF1yjGFBDDEm_7g41bUhoLbHnV",
         "url": "https://daily49er.com/news/2018/09/11/lbsu-opts-to-move-prospector-pete-statue-and-get-a-new-mascot/",
@@ -559,6 +559,12 @@ class Data extends Component {
                         </div>
                     </div> */}
                 </div>
+                <center>
+                <h4>Content copyright © 2019 Daily Forty-Niner.</h4>
+                <h4>
+                    Built by Samantha Hangsan, Paula Kiley, Nahid Ponciano, Kaleen Luu, and Jonathan Majarrez.
+                </h4>
+                </center>
             </div>
         );
     }

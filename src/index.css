@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
   margin: 0;
@@ -35,9 +36,19 @@ code {
   padding-left: 0px;
 }
 
-.btn-outline-light {
-  background-color: black;
+.btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px !important;
 }
+
+.btn-outline-light {
+  background-color: rgba(105,105,105,0.8) !important;
+}
+
+.btn:hover {
+  background-color: rgba(245,245,245,0.8) !important;
+}
+
 
 /* Full page responsive background image */
 img.bg {

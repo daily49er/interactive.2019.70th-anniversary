@@ -17,6 +17,7 @@ export default class Navigation extends Component {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="https://daily49er.com" target="__blank__">Daily Forty-Niner</Nav.Link>
+                    <Nav.Link href="timeline">Timeline</Nav.Link>
                     {/*<Nav.Link href="create">Create Event</Nav.Link>*/}
                     {/*<Nav.Link href="add-staff">Add Staff</Nav.Link>*/}
                     {/* <Nav.Link href="soroptimist">Soroptimist</Nav.Link>
@@ -31,7 +32,7 @@ export default class Navigation extends Component {
                 <Nav>
                       {/*<Nav.Link href="timeline">Timeline</Nav.Link>*/}
                       {/*<Nav.Link href="staff">-70th Team-</Nav.Link>*/}
-                    
+
                     {/* <Nav.Link href="#deets">More deets</Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">
                         Dank memes

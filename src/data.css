@@ -20,8 +20,8 @@ body {
 
 .background-image {
   background: linear-gradient(
-      rgba(236, 170, 0, 0.45),
-      rgba(236, 170, 0, 0.45)
+      rgba(236, 170, 0, 0.7),
+      rgba(236, 170, 0, 0.7)
     ), url('/img/aerial_csulbcampus.jpg');
  /* -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
@@ -142,8 +142,8 @@ h4 {
 }
 
 .timeline-item-content time {
-    color: #777;
-    font-size: 15px;
+    color: #555;
+    font-size: 18px;
     font-weight: bold;
 }
 
