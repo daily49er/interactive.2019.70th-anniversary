@@ -31,7 +31,7 @@ export default class EventsList extends Component {
                     <h1>Celebrating</h1>
                     <center>
                         <h1>70 Years</h1>
-                         <Button variant="outline-light">Explore the Timeline</Button>
+                         <Button variant="outline-light" href="/timeline">Explore the Timeline</Button>
                     </center>
                 </div>
                 <Fade {...fadeProperties}>
