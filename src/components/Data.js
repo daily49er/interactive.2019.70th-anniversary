@@ -497,6 +497,7 @@ class Data extends Component {
     ];
 
         const events = timelineData.sort( (a, b) => new Date(a.date) - new Date(b.date) ).map((event) =>
+
             <div className="timeline-item">
                 <div className="timeline-item-content">
 
@@ -529,11 +530,12 @@ class Data extends Component {
                     <span className="circle" />
                 </div>
             </div>
+
         );
 
         return (
-             // <div className="background-image"></div>
-            <div className="Data">
+             <div className="Data">
+                <div className="background-image"></div>
                 <center>
                 <h1>70 YEARS OF JOURNALISM</h1>
                 <h4>
@@ -543,6 +545,7 @@ class Data extends Component {
                 {/* <Timeline data={this.state.timelineData}/> */}
 
                 <div className="timeline-container">
+
                     {events}
                     {/* <Timeline events = {this.state.timelineData}/>
                     <div className="timeline-item">
