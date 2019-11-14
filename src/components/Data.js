@@ -537,9 +537,16 @@ class Data extends Component {
              <div className="Data">
                 <div className="background-image"></div>
                 <center>
-                <h1>70 YEARS OF JOURNALISM</h1>
+                {/* <h1>70 YEARS OF DAILY FORTY-NINER COVERAGE</h1> */}
+                <h1>
+                70 Years of Daily Forty-Niner Coverage
+                </h1>
                 <h4>
                 On September 28, 1949, Los Angeles-Orange County State College began its first day of classes in a converted apartment building at 5401 E. Anaheim St. with 169 enrolled students and 13 full-time faculty. Less than one month later, the Daily Forty-Niner was established as the first organization at the university and has been covering campus news for 70 years.
+                <br></br>
+                <br></br>
+                <b>Scroll below to explore 70 years of Long Beach State history told through
+                <br></br>70 years of Daily Forty-Niner coverage.</b>
                 </h4>
                 </center>
                 {/* <Timeline data={this.state.timelineData}/> */}
