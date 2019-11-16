@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../data.css'
+import Zoom from 'react-reveal/Zoom';
 
 class Data extends Component {
     render() {
@@ -499,6 +500,7 @@ class Data extends Component {
         const events = timelineData.sort( (a, b) => new Date(a.date) - new Date(b.date) ).map((event) =>
 
             <div className="timeline-item">
+                <Zoom left>
                 <div className="timeline-item-content">
 
                     <span className="tag" style={{ background: event.color }}>
@@ -529,6 +531,7 @@ class Data extends Component {
                     </a>) : <h4></h4>}
                     <span className="circle" />
                 </div>
+                </Zoom>
             </div>
 
         );
