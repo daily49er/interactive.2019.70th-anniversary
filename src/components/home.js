@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Fade } from "react-slideshow-image";
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import Typist from 'react-typist';
+import TypistLoop from 'react-typist-loop';
 
 const fadeImages = [
     "img/football.jpg",
@@ -10,7 +12,7 @@ const fadeImages = [
     "img/womensstudies.jpg"
 ];
 
-const traits = ["News", "Integrity", "Excellence", "Boldness"];
+const traits = ["Accuracy", "Accountability", "Transparency", "Objectivity", "Truth", "Honesty", "Integrity", "Excellence", "Boldness"];
 
 const fadeProperties = {
     duration: 5000,
@@ -24,13 +26,28 @@ const fadeProperties = {
 };
 
 export default class EventsList extends Component {
+    state = {
+        typing: true,
+    }
+    done = () => {
+        this.setState({typing: false}, () => {
+            this.setState({typing: true})
+        });
+    }
     render() {
         return (
             <div className="home-dashboard">
                 <div className="celebration">
-                    <h1>Celebrating</h1>
-                    <center>
-                        <h1>70 Years</h1>
+                    <h1>Celebrating 70 Years of {this.state.typing ? <Typist
+              onTypingDone={this.done}
+            >
+                {traits.map(word => ([
+                    <span>{word}</span>,
+                    <Typist.Backspace count={word.length} delay={2000} />,
+                ]))}
+            </Typist> : ""}</h1>
+
+            <center>
                          <Button variant="outline-light" href="/timeline">Explore the Timeline</Button>
                     </center>
                 </div>
