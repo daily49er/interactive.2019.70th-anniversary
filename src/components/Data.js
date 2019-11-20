@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import '../data.css'
 import Zoom from 'react-reveal/Zoom';
+import _ from 'lodash';
 
 class Data extends Component {
     render() {
+          let _ = require('underscore')
+
         const timelineData = [
       {
         "event": "First issue of The Forty-Niner produced",
@@ -495,7 +498,22 @@ class Data extends Component {
         "tags": "",
         "color": ""
       }
+
     ];
+
+    // const cats = timelineData.reduce((catMemo, { date, event }) => {
+    //   (timelineData[new Date(date).getFullYear()] = timelineData[new Date(date).getFullYear()] || []).push(event);
+    //   return catMemo;
+    // }, {});
+    // console.log(cats);
+
+    //Math.floor(year/10)*10
+
+    var alldates = _.groupBy(timelineData, function(obj) {
+    const decade = Math.floor(new Date(obj.date).getFullYear()/10)*10;
+    return decade;
+    });
+    console.log(alldates);
 
         const events = timelineData.sort( (a, b) => new Date(a.date) - new Date(b.date) ).map((event) =>
 
