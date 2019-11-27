@@ -77,8 +77,9 @@ h4 {
 .timeline-item:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;
-    padding-left: 30px;
+    left: calc(50%);
     padding-right: 0;
+    margin: 30px;
 }
 
 .timeline-item-content {
@@ -188,4 +189,5 @@ h4 {
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
     right: auto;
     left: -40px;
+    padding-left: -30px;
 }

@@ -4,6 +4,14 @@ import Zoom from 'react-reveal/Zoom';
 import _ from 'lodash';
 
 class Data extends Component {
+    state = {
+        decadeDisplayed: false,
+    }
+    done = () => {
+        this.setState({decadeDisplayed: true}, () => {
+            this.setState({typing: false})
+        });
+    }
     render() {
           let _ = require('underscore')
 
@@ -509,15 +517,25 @@ class Data extends Component {
 
     //Math.floor(year/10)*10
 
-    var alldates = _.groupBy(timelineData, function(obj) {
+    const alldates = _.groupBy(timelineData, function(obj) {
     const decade = Math.floor(new Date(obj.date).getFullYear()/10)*10;
     return decade;
     });
     console.log(alldates);
+    // return alldates.sort().map(rows => {
+    //     var row = rows.map(cell => <td>{cell}</td>);
+    //     return(
+    //     <tr>{row}</tr>
+    //     );
 
-        const events = timelineData.sort( (a, b) => new Date(a.date) - new Date(b.date) ).map((event) =>
 
-            <div className="timeline-item">
+
+    const decades = Object.keys(alldates).map((key) =>
+       <div key={key}>
+            <div className="decade"><h1>{key + "'s"}</h1></div>
+
+        {alldates[key].sort( (a, b) => new Date(a.date) - new Date(b.date) ).map((event) =>
+            <div className="timeline-item" key={event.event}>
                 <Zoom left>
                 <div className="timeline-item-content">
 
@@ -531,15 +549,6 @@ class Data extends Component {
                         src = {event.img}
                     />
                     <p>{event.description}</p>
-                    {/*{event.link && (
-                        <a
-                            href={event.link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {event.link.text}
-                        </a>
-                    )}*/}
                     {event.url ? (<a
                         href={event.url}
                         target="_blank"
@@ -550,9 +559,43 @@ class Data extends Component {
                     <span className="circle" />
                 </div>
                 </Zoom>
-            </div>
+                </div>
+        )}
+        </div>
+    );
 
-        );
+    // });
+
+
+    // const events = timelineData.sort( (a, b) => new Date(a.date) - new Date(b.date) ).map((event) =>
+
+    //         <div className="timeline-item">
+    //             <Zoom left>
+    //             <div className="timeline-item-content">
+
+    //                 <span className="tag" style={{ background: event.color }}>
+    //                     {event.tags}
+    //                 </span>
+    //                 <time>{event.date}</time>
+
+    //                 <h1>{event.event}</h1>
+    //                 <img
+    //                     src = {event.img}
+    //                 />
+    //                 <p>{event.description}</p>
+    //                 {event.url ? (<a
+    //                     href={event.url}
+    //                     target="_blank"
+    //                     rel="noopener noreferrer"
+    //                     >
+    //                     {event.text}
+    //                 </a>) : <h4></h4>}
+    //                 <span className="circle" />
+    //             </div>
+    //             </Zoom>
+    //         </div>
+
+    //     );
 
         return (
              <div className="Data">
@@ -574,7 +617,7 @@ class Data extends Component {
 
                 <div className="timeline-container">
 
-                    {events}
+                    {decades}
                     {/* <Timeline events = {this.state.timelineData}/>
                     <div className="timeline-item">
                         <div className="timeline-item-content">
