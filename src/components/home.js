@@ -38,14 +38,14 @@ export default class EventsList extends Component {
         return (
             <div className="home-dashboard">
                 <div className="celebration">
-                    <h1>Celebrating 70 Years of {this.state.typing ? <Typist
+                    <h1>Celebrating 70 Years of <div className="traits">{this.state.typing ? <Typist
               onTypingDone={this.done}
             >
                 {traits.map(word => ([
                     <span>{word}</span>,
                     <Typist.Backspace count={word.length} delay={2000} />,
                 ]))}
-            </Typist> : ""}</h1>
+            </Typist> : ""}</div></h1>
 
             <center>
                          <Button variant="outline-light" href="/timeline">Explore the Timeline</Button>
