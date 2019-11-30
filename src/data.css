@@ -42,6 +42,54 @@ h1 {
     color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  .timeline-container::after {
+    left: 0px !important;
+  }
+  .decade h1 {
+    padding-left: 10px;
+  }
+  .timeline-item:nth-child(odd) {
+    left: 0px !important;
+  }
+
+  .timeline-item-content::after {
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    right: auto;
+    left: -7.5px
+    }
+
+    .timeline-item {
+        align-self: flex-end;
+        justify-content: flex-start !important;
+        padding-right: 0 !important;
+        margin: 30px !important;
+    }
+
+    .timeline-item-content {
+        max-width: 100% !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-item-content {
+        align-items: flex-end !important;
+    }
+
+    .timeline-item .circle {
+        right: auto;
+        left: -38px !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-item-content .circle {
+        left: -38px !important;
+    }
+}
+
 
 h4 {
     font-family: 'Roboto', sans-serif;
@@ -175,7 +223,6 @@ h4 {
 
 .timeline-item .circle {
     background-color: black;
-    /*border: 3px solid #e17b77;*/
     border: 3px solid black;
     border-radius: 50%;
     position: absolute;
