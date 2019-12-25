@@ -68,7 +68,7 @@ class Data extends Component {
       },
       {
         "event": "First dormitories built",
-        "date": "September 1958",
+        "date": "September 1, 1958",
         "description": "The first dormitories were complete by September of 1958, changing the campus from only being a \"commuter campus\" to a resident college.",
         "img": "https://drive.google.com/uc?id=1KQJMWiPEb3q9Ee8AB57JeviAGiz-Dd-W",
         "url": "https://drive.google.com/open?id=1yg4Vhh0WIYs5eaz9vYh_RRJUTAKgUe1Y",
@@ -88,7 +88,7 @@ class Data extends Component {
       },
       {
         "event": "Shark Lab established at CSULB",
-        "date": 'January 1966',
+        "date": 'January 1, 1966',
         "description": "The Shark Lab was established in 1966 when Dr. Donald Nelson joined the faculty at CSULB as part of Marine Biology program.",
         "img": "https://drive.google.com/uc?id=10f0BpjMtQO8ZHvudwJn9go6a9CSw-mBv",
         "url": "",
@@ -98,7 +98,7 @@ class Data extends Component {
       },
       {
         "event": "Forty-Niner Man makes its debut on campus",
-        "date": 'January 1967',
+        "date": 'January 1, 1967',
         "description": "President Carl W. McIntosh unveiled the bronze statue titled \"the Forty-Niner man,\" sculpted by Ben Barker and sponsored by Circle K.",
         "img": "https://drive.google.com/uc?id=1RqavoWZ4g0mDUOZETYd62BsNilMsZqn2",
         "url": "",
@@ -108,7 +108,7 @@ class Data extends Component {
       },
       {
         "event": "La Raza established at CSULB",
-        "date": 'January 1967',
+        "date": 'January 1, 1967',
         "description": "United Mexican American Students was established on campus. The organization would later become M.E.Ch.A and then La Raza.",
         "img": "",
         "url": "",
@@ -118,7 +118,7 @@ class Data extends Component {
       },
       {
         "event": "Steve Horn begins new term as president of Cal State Long Beach",
-        "date": 'January 1970',
+        "date": 'January 1, 1970',
         "description": "Steve Horn became the third university president and served for 18 years.",
         "img": "https://drive.google.com/uc?id=1-3_OGlGEK7Zv7g4S6fjhS_Tdt17Jinqf",
         "url": "https://drive.google.com/open?id=1XUad35Lyo0Y5iPghslGeW67tYBTRhSmu",
@@ -128,7 +128,7 @@ class Data extends Component {
       },
       {
         "event": "University Student Union opens",
-        "date": 'January 1972',
+        "date": 'January 1, 1972',
         "description": "The University Student Union was built with a cost of about $4.2 million.",
         "img": "https://drive.google.com/uc?id=1z6LC1BF9oTlPQE-1wR4hekZ5dJQ_sX98",
         "url": "https://drive.google.com/open?id=132vnjRhukVXgYKR-9skIgxEeQO84aLEZ",
@@ -148,7 +148,7 @@ class Data extends Component {
       },
       {
         "event": "On-campus recycling center built",
-        "date": 'January 1976',
+        "date": 'January 1, 1976',
         "description": "The recycling center, located across the parking lot from the Walter Pyramid, was built with funding from ASI and the city of Long Beach.",
         "img": "",
         "url": "https://drive.google.com/open?id=12U1nK--Uut7WOO3er2qcV_5offTKQxjU",
@@ -228,7 +228,7 @@ class Data extends Component {
       },
       {
         "event": "Building for College of Business Administration opens",
-        "date": 'January 1991',
+        "date": 'January 1, 1991',
         "description": "The state-of-the-art building, featuring modern lecture halls and decision-support laboratories with multi-media capability, opened its doors for the first time.",
         "img": "https://drive.google.com/uc?id=1XOd_Iy0kQr527Zf57SmWkgLqTr_QEGL_",
         "url": "https://drive.google.com/open?id=1CLz9Bl7cMSxfcETMFMghQVzi-GRS1XUk",
@@ -258,7 +258,7 @@ class Data extends Component {
       },
       {
         "event": "Richard & Karen Carpenter Performing Arts Center opens",
-        "date": 'January 1994',
+        "date": 'January 1, 1994',
         "description": "",
         "img": "https://drive.google.com/uc?id=14Xu-rQTzxfbPoFhJkJYpwD5ny_ttJk7K",
         "url": "",
@@ -298,7 +298,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB men's basketball wins Big West Conference",
-        "date": 'January 1995',
+        "date": 'January 1, 1995',
         "description": "The team became champions at the 1995 Big West Conference",
         "img": "",
         "url": "",
@@ -308,7 +308,7 @@ class Data extends Component {
       },
       {
         "event": "The central plant is completed",
-        "date": 'January 1997',
+        "date": 'January 1, 1997',
         "description": "The central plant finished construction at the university, providing campus buildings with air conditioning and heating, with the exception of the Pyramid, Carpenter Performing Arts Center and University Music Center.",
         "img": "",
         "url": "",
@@ -318,7 +318,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB women's volleyball have a winning season",
-        "date": 'January 1998',
+        "date": 'January 1, 1998',
         "description": "The women's volleyball team became the first NCAA Division I team in history to have an undefeated season and take home the 1998 National Championship.",
         "img": "https://drive.google.com/uc?id=1qaLkrkj9p7uahu7rBWC-LHOWVQnSVAMK",
         "url": "https://drive.google.com/open?id=1-qQoxyqX2G4Ew3GRVNcR_k1NRbjNPPMC",
@@ -338,7 +338,7 @@ class Data extends Component {
       },
       {
         "event": "Broman Hall and new Molecular and Life Science Center construction begins",
-        "date": 'January 2002',
+        "date": 'January 1, 2002',
         "description": "The school began construction on Brotman Hall and the Molecular and Life Science Center. The Fine Arts buildings also undergo updates.",
         "img": "",
         "url": "",
@@ -358,7 +358,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB students stage walk-out in protest of raised tuition",
-        "date": 'January 2004',
+        "date": 'January 1, 2004',
         "description": "The California State Student Association organized a statewide protest on college campuses in response to Gov. Schwarzengger's proposed budget cut and tuition hike. Students marched outside Brotman Hall, which was locked down and guarded by police to keep protestors away.",
         "img": "https://drive.google.com/uc?id=1nt4MPk7NVZzDV5M8O_CGlc8pvilpuNkU",
         "url": "http://web.csulb.edu/~d49er/archives/2005/spring/news/volLVno106-csulb.shtml",
@@ -368,7 +368,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB President Robert C. Maxson retires, succeeded by F. King Alexander",
-        "date": 'January 2006',
+        "date": 'January 1, 2006',
         "description": "Maxson retired after 11 years and was succeeded by F. King Alexander as president.",
         "img": "https://drive.google.com/uc?id=1L-YefW9X7YN6tzEucfrTuCHwniJKrp3Y",
         "url": "https://drive.google.com/open?id=1W9S2l7tnGpW4zcifcCLFvQTmo4Fuh6Md",
@@ -388,7 +388,7 @@ class Data extends Component {
       },
       {
         "event": "Music department gets renamed",
-        "date": "March 2008",
+        "date": "March 1, 2008",
         "description": "The name was officially changed to The Bob Cole Conservatory of Music.",
         "img": "",
         "url": "https://drive.google.com/open?id=1dBhevBzwTGOvxLCEXj_XwBINYwSqubid",
@@ -398,7 +398,7 @@ class Data extends Component {
       },
       {
         "event": "CSULB launches first President's Forum on International Human Rights",
-        "date": 'January 2008',
+        "date": 'January 1, 2008',
         "description": "The university organized the first President's Forum on International Human Rights. The 2008 theme was \"Modern Genocides and Global Responsibilities\" and over 6,000 people participated, including students, faculty, staff and members of the community.",
         "img": "",
         "url": "",

@@ -9,7 +9,9 @@ const fadeImages = [
     "img/band_football.jpg",
     "img/old_soroptimist.jpg",
     "img/parking.jpg",
-    "img/womensstudies.jpg"
+    "img/soccer.jpg",
+    "img/womensstudies.jpg",
+    "img/long-beach-state-college-sign.jpg",
 ];
 
 const traits = ["Accuracy", "Accountability", "Transparency", "Objectivity", "Truth", "Honesty", "Integrity", "Excellence", "Boldness"];
