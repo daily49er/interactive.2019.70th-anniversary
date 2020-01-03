@@ -56,35 +56,35 @@ export default class CreateEvent extends Component {
     // Set state when picture is changed
     onChangeImg(e) {
         this.setState({
-            picture: e.target.value
+            img: e.target.value
         });
     }
 
     // Set state when url is changed
     onChangeURL(e) {
         this.setState({
-            article: e.target.value
+            url: e.target.value
         });
     }
 
     // Set state when link text is changed
     onChangeText(e) {
         this.setState({
-            article: e.target.value
+            text: e.target.value
         });
     }
 
     // Set state when tags are changed
     onChangeTags(e) {
         this.setState({
-            article: e.target.value
+            tags: e.target.value
         });
     }
 
     // Set state when tag color is changed
     onChangeColor(e) {
         this.setState({
-            article: e.target.value
+            color: e.target.value
         });
     }
 
@@ -154,7 +154,7 @@ export default class CreateEvent extends Component {
                         <input type = "text"
                             className = "form-control"
                             value = {this.state.img}
-                            onChange = {this.onChangeDescription}
+                            onChange = {this.onChangeImg}
                             />
                     </div>
                     <div className="form-group">
@@ -169,11 +169,12 @@ export default class CreateEvent extends Component {
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="inputGroupSelect01">Link Text</label>
                         </div>
-                        <input type = "text"
-                            className = "form-control"
-                            value = {this.state.text}
-                            onChange = {this.onChangeText}
-                            />
+                        <select class="custom-select" id="inputGroupSelect01" onChange={this.onChangeText} value={this.state.text}>
+                            <option selected>Choose...</option>
+                            <option value="1">read more</option>
+                            <option value="2">watch more</option>
+                            <option value="3">listen to more</option>
+                        </select>
                     </div>
                     <div className="form-group">
                         <label>Tags: </label>
