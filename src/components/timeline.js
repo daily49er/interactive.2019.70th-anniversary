@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../data.css'
+import '../timeline.css'
 import Zoom from 'react-reveal/Zoom';
 import _ from 'lodash';
 
