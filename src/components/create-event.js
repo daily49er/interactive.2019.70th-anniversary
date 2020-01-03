@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DatePicker from 'react-date-picker';
-
+import '../create-event.css'
 
 export default class CreateEvent extends Component {
     constructor(props) {
@@ -10,18 +10,22 @@ export default class CreateEvent extends Component {
         this.onChangeEvent = this.onChangeEvent.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
         this.onChangeDescription = this.onChangeDescription.bind(this);
-        this.onChangePicture = this.onChangePicture.bind(this);
-        this.onChangeVideo = this.onChangeVideo.bind(this);
-        this.onChangeArticle = this.onChangeArticle.bind(this);
+        this.onChangeImg = this.onChangeImg.bind(this);
+        this.onChangeURL = this.onChangeURL.bind(this);
+        this.onChangeText = this.onChangeText.bind(this);
+        this.onChangeTags = this.onChangeTags.bind(this);
+        this.onChangeColor = this.onChangeColor.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             event: '',
             date: new Date(),
-            description: '', 
-            picture: '',
-            video: '',
-            article: '',
+            description: '',
+            img: '',
+            url: '',
+            text: '',
+            tags: '',
+            color: ''
         }
     }
 
@@ -35,7 +39,7 @@ export default class CreateEvent extends Component {
     // Set state when event is changed
     onChangeEvent(e) {
         this.setState({
-            event: e.target.value            
+            event: e.target.value
         });
     }
 
@@ -45,28 +49,42 @@ export default class CreateEvent extends Component {
     // Set state when description is changed
     onChangeDescription(e) {
         this.setState({
-            description: e.target.value            
+            description: e.target.value
         });
     }
 
     // Set state when picture is changed
-    onChangePicture(e) {
+    onChangeImg(e) {
         this.setState({
-            picture: e.target.value            
+            picture: e.target.value
         });
     }
 
-    // Set state when video is changed
-    onChangeVideo(e) {
+    // Set state when url is changed
+    onChangeURL(e) {
         this.setState({
-            video: e.target.value            
+            article: e.target.value
         });
     }
 
-    // Set state when article is changed
-    onChangeArticle(e) {
+    // Set state when link text is changed
+    onChangeText(e) {
         this.setState({
-            article: e.target.value            
+            article: e.target.value
+        });
+    }
+
+    // Set state when tags are changed
+    onChangeTags(e) {
+        this.setState({
+            article: e.target.value
+        });
+    }
+
+    // Set state when tag color is changed
+    onChangeColor(e) {
+        this.setState({
+            article: e.target.value
         });
     }
 
@@ -76,29 +94,33 @@ export default class CreateEvent extends Component {
             event: this.state.event,
             date: this.state.date,
             description: this.state.description,
-            picture: this.state.picture,
-            video: this.state.video,
-            article: this.state.article
+            img: this.state.img,
+            url: this.state.url,
+            text: this.state.text,
+            tags: this.state.tags,
+            color: this.state.color
         }
         console.log(myEvent);
 
         this.setState({
             event: '',
             date: new Date(),
-            description: '', 
-            picture: '',
-            video: '',
-            article: '',
+            description: '',
+            img: '',
+            url: '',
+            text: '',
+            tags: '',
+            color: ''
         })
 
         // Return to homepage
         // window.location = '/';
     }
- 
+
     render() {
         return (
             <div>
-                <h3>Create New Event</h3>
+                <h3>Add New Event</h3>
                 <form onSubmit = {this.onSubmit}>
                     <div className="form-group">
                         <label>Event Name: </label>
@@ -131,24 +153,42 @@ export default class CreateEvent extends Component {
                         <label>Picture Link: </label>
                         <input type = "text"
                             className = "form-control"
-                            value = {this.state.picture}
-                            onChange = {this.onChangePicture}
+                            value = {this.state.img}
+                            onChange = {this.onChangeDescription}
                             />
                     </div>
                     <div className="form-group">
-                        <label>Video Link: </label>
+                        <label>Article/Video Link: </label>
                         <input type = "text"
                             className = "form-control"
-                            value = {this.state.video}
-                            onChange = {this.onChangeVideo}
+                            value = {this.state.url}
+                            onChange = {this.onChangeURL}
+                            />
+                    </div>
+                    <div className="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Link Text</label>
+                        </div>
+                        <input type = "text"
+                            className = "form-control"
+                            value = {this.state.text}
+                            onChange = {this.onChangeText}
                             />
                     </div>
                     <div className="form-group">
-                        <label>Article Link: </label>
+                        <label>Tags: </label>
                         <input type = "text"
                             className = "form-control"
-                            value = {this.state.article}
-                            onChange = {this.onChangeArticle}
+                            value = {this.state.tags}
+                            onChange = {this.onChangeTags}
+                            />
+                    </div>
+                    <div className="form-group">
+                        <label>Color: </label>
+                        <input type = "text"
+                            className = "form-control"
+                            value = {this.state.color}
+                            onChange = {this.onChangeColor}
                             />
                     </div>
 
