@@ -90,7 +90,7 @@ nodemon will continuously watch the backend and update
 3. Create env, copy connection string, create environmental variable in .env to establish MongoDB database connection
 4. Create database schema using Mongoose
 5. Add API endpoint routes, so app can perform CRUD operations
-6. Use Insomnia REST client to test API. Create new POST request with JSON
+6. Use Insomnia REST client or Postman to test API. Create new POST request with JSON
    Example:
 
 ```
