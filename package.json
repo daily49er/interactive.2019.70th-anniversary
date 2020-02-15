@@ -25,7 +25,7 @@
     "react-typist-loop": "^0.0.5",
     "serialize-javascript": "^2.1.2",
     "underscore": "^1.9.1",
-    "yarn": "^1.17.3",
+    "yarn": "^1.22.0",
     "yarn-upgrade-all": "^0.5.0"
   },
   "scripts": {
